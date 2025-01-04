@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+        <p>Get in touch with us for any enquiries or feedback.</p>
+    </header>
+
+    <section id="library-info">
+        <h2>Library Information</h2>
+        <p><strong>Address:</strong> HnD Library,NIT Raipur,Chattisgarh</p>
+        <p><strong>Phone:</strong> +1 234 567 890</p>
+        <p><strong>Email:</strong> dnhlibrary@gmail.com</p>
+    </section>
+
+    <section id="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="formSub.html">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="subject">Subject:</label><br>
+            <select id="subject" name="subject">
+                <option value="general">General Enquiry</option>
+                <option value="bookrequest">Book Request</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Others</option>
+            </select><br>
+
+            <label for="message">Message/Enquiry:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="library-location">
+        <h2>Directing You To Us:</h2>
+        <iframe src="https://www.google.com/maps/place/NIT+Raipur/@21.2506829,81.6041659,18.78z/data=!4m6!3m5!1s0x3a28dde213f66723:0x21543965c50c43c7!8m2!3d21.2497222!4d81.6050291!16zL20vMGNqeXFk?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" width="600" height="450" style="border:0;"></iframe>
+    </section>
+
+    <section id="working-hours">
+        <h2>Library Working Hours</h2>
+        <p>Monday to Friday: 9:00 AM - 6:00 PM</p>
+        <p>Saturday: 10:00 AM - 4:00 PM</p>
+        <p>Sunday: Closed</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Library Management System | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

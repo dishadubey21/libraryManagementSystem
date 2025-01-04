@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="adminDashboard.html">Dashboard</a></li>
+            <li><a href="adminlogin.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Admin Dashboard</h1>
+        <p>Manage the library.</p>
+    </header>
+    
+    <section id="book-management">
+        <h2>Manage Books</h2>
+        
+        <h3>Add New Book</h3>
+        
+        <form id="addBookForm">
+            <label for="bookTitle">Book Title:</label><br>
+            <input type="text" id="bookTitle" name="bookTitle" required><br>
+
+            <label for="bookAuthor">Author:</label><br>
+            <input type="text" id="bookAuthor" name="bookAuthor" required><br>
+
+            <label for="bookGenre">Genre:</label><br>
+            <select id="bookGenre" name="bookGenre" required>
+                <option value="">Select Genre</option>
+                <option value="Fiction">Fiction</option>
+                <option value="Non-Fiction">Non-Fiction</option>
+                <option value="Science">Science</option>
+                <option value="History">History</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Biography">Biography</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Romance">Romance</option>
+                <option value="Horror">Horror</option>
+                <option value="Self-Help">Self-Help</option>
+            </select><br>
+
+            <label for="bookPrice">Price:</label><br>
+            <input type="number" id="bookPrice" name="bookPrice" required><br>
+
+            <label for="bookImage">Book Image URL:</label><br>
+            <input type="text" id="bookImage" name="bookImage" required><br>
+
+            <button type="submit">Add Book</button>
+        </form>
+
+        <form id="editBookForm" style="display: none;">
+            <label for="editbookTitle">Book Title:</label><br>
+            <input type="text" id="editbookTitle" name="bookTitle" required><br>
+
+            <label for="editbookAuthor">Author:</label><br>
+            <input type="text" id="editbookAuthor" name="bookAuthor" required><br>
+
+            <label for="editbookGenre">Genre:</label><br>
+            <select id="editbookGenre" name="bookGenre" required>
+                <option value="">Select Genre</option>
+                <option value="Fiction">Fiction</option>
+                <option value="Non-Fiction">Non-Fiction</option>
+                <option value="Science">Science</option>
+                <option value="History">History</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Biography">Biography</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Romance">Romance</option>
+                <option value="Horror">Horror</option>
+                <option value="Self-Help">Self-Help</option>
+            </select><br>
+
+            <label for="editbookPrice">Price:</label><br>
+            <input type="number" id="editbookPrice" name="bookPrice" required><br>
+
+            <label for="editbookImage">Book Image URL:</label><br>
+            <input type="text" id="editbookImage" name="bookImage" required><br>
+
+            <button type="submit">Edit Book</button>
+            
+        </form>
+        
+        <h3>Available Books</h3>
+        <div id="booksContainer"></div>
+    </section>
+
+    <script src="./JS/adminDashboard.js"></script>
+</body>
+</html>
