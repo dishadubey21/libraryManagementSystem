@@ -11,31 +11,131 @@ body, html {
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
-        background-color: #203040; 
+        background-color: rgb(52, 5, 33) ;
         color: white;
+        position: sticky; /* Makes the navbar sticky */
+        top: 0; /* Sticks the navbar to the top */
+        z-index: 1000;
     }
     
     
-    .navbar-logo img {
+    .logo img {
         height: 50px; 
     }
     
     
-    .navbar-links a {
-        text-decoration: none;
-        color: white;
-        margin: 0 15px;
-        font-size: 16px;
-        transition: color 0.3s ease;
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px; /* Space between links */
     }
     
-    .navbar-links a:hover {
-        color: #00C4CC; 
+    .nav-links li {
+        display: inline;
     }
-    header{
-        background-color: #40607d;
-        font-family: Arial, Helvetica, sans-serif;
-        color:white;
+    
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        padding: 8px 12px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .nav-links a:hover {
+        background-color:pink;
+        border-radius: 5px;
+    }
+    .head{
+        background-color: beige;
+        font-family: "Hammersmith One", serif;
+        font-weight: 400;
+        font-style: normal;
         text-align: center;
-
+        padding: 10px;
+        line-height: 1.2;
+        position: sticky;
+        z-index: 1000;
     }
+    #main-content {
+        display: flex;
+        padding: 10px;
+        background-color: #f9f9f9; 
+        border: 1px solid #ddd;
+        width: 100%;
+        margin: 0 auto; 
+        width: 100%; 
+        position: relative;
+        top: 0; 
+        margin: 0; 
+        box-sizing: border-box; 
+
+      }
+      
+    
+      #genre-sidebar{
+        background-color: rgb(52, 5, 33);
+        color: white;
+        margin: 0;
+        padding-left: 10px;
+        width:15%;
+    }
+      .head2{
+        font-family: "Hammersmith One", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .head3{
+        font-family: "Hammersmith One", serif;
+        font-weight: 400;
+        font-style: normal;
+        background-color: rgb(184, 131, 163);
+        padding: 0;
+        margin: 0;
+        color: #ddd;
+        font-size: 20px;
+        padding-left: 10px;
+        width: 100%;
+      
+      }
+      /*.book-card{
+        border: 0.5px solid #eee;
+        border-radius: 0.5rem;
+        box-shadow: 3px 3px 3px #eee;
+        text-align: center;
+        width: min-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0.2rem;
+      }*/
+      
+      .book-card {
+        width: 300px; /* Fixed width */
+        height: 400px; /* Fixed height */
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column; /* Stack content vertically */
+        justify-content: space-between;
+        align-items: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      /* Card Hover Effect */
+      .book-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+      
+      /* Book Image */
+      .book-card img {
+        width: 100%;
+        height: 65%; /* Occupies 65% of the card height */
+        object-fit: cover; /* Ensures image fills the space proportionally */
+        border-bottom: 1px solid #ddd;
+      }
+      

@@ -1,4 +1,3 @@
-
 const genres = ["Fiction", "Non-Fiction", "Science", "History", "Fantasy", "Biography", "Mystery", "Romance", "Horror", "Self-Help"];
 
 const books = [
@@ -153,9 +152,20 @@ function borrowBook(bookId) {
     const allBooks = loadBooksFromLocalStorage();
     const book = allBooks.find(book => book.id === bookId);
     if (book) {
-        alert(`You have borrowed "${book.title}" by ${book.author}.`);
+        const modal = document.getElementById("borrow-modal");
+        modal.style.display = "block";
+
+        const borrowMessage = document.getElementById("borrow-message");
+        borrowMessage.textContent = `You have borrowed "${book.title}" by ${book.author}.`;
     }
 }
+
+function closeModal() {
+    const modal = document.getElementById("borrow-modal");
+    modal.style.display = "none";
+}
+
+document.getElementById("close-modal").addEventListener("click", closeModal);
 
 (() => {
     displayGenres();
