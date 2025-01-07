@@ -4,32 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./CSS/CSS/admindashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Vinyl&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <ul>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./assets/library logo2.jpg" alt="Logo">
+        </div>
+        <ul class="nav-links">
             <li><a href="adminDashboard.html">Dashboard</a></li>
             <li><a href="adminlogin.html">Logout</a></li>
         </ul>
     </nav>
 
-    <header>
+    <header class="header">
         <h1>Admin Dashboard</h1>
         <p>Manage the library.</p>
     </header>
     
     <section id="book-management">
+        <div class="form">
         <h2>Manage Books</h2>
         
         <h3>Add New Book</h3>
         
         <form id="addBookForm">
             <label for="bookTitle">Book Title:</label><br>
-            <input type="text" id="bookTitle" name="bookTitle" required><br>
+            <input type="text" id="bookTitle" name="bookTitle" class="field" required><br>
 
             <label for="bookAuthor">Author:</label><br>
-            <input type="text" id="bookAuthor" name="bookAuthor" required><br>
+            <input type="text" id="bookAuthor" name="bookAuthor" class="field" required><br>
 
             <label for="bookGenre">Genre:</label><br>
             <select id="bookGenre" name="bookGenre" required>
@@ -54,6 +59,8 @@
 
             <button type="submit">Add Book</button>
         </form>
+        </div>
+        <hr style="width: 100%;  color : #000;">
 
         <form id="editBookForm" style="display: none;">
             <label for="editbookTitle">Book Title:</label><br>

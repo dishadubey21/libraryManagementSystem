@@ -6,6 +6,7 @@ body{
     font-family: "Hammersmith One", serif;
     font-weight: 400;
     font-style: normal;
+    
     /*background-image: url("/libraryManagementSystem/assets/logo.webp");
     background-repeat: no-repeat;
     background-size: cover;*/
@@ -81,5 +82,32 @@ header{
     background-color: rgb(52,5,33);
     color: white;
     margin-left: 200px;
+}
+#library-location{
+    margin-top: 10px;
+    font-size: 22px;
+    color:rgb(44, 42, 42);
+    margin-bottom: 5px;
+    padding: 20px;
+}
+#working-hours{
+    margin-top: 10px;
+    font-size: 22px;
+    color:rgb(44, 42, 42);
+    margin-bottom: 5px;
+    padding: 20px;
+
+}
+.footer{
+    background-color: rgb(52,5,33);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header img{
+    height: 50px;
+    float: left;
 }
 

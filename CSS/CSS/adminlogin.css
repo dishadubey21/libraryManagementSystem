@@ -1,0 +1,45 @@
+body{
+    background-color: aliceblue;
+}
+#login-container{
+    background-color: rgb(52,5,33);
+    color: white;
+    font-family: "Hammersmith One", serif;
+    font-weight: 400;
+    font-style: normal;
+    width:20%;
+    border-radius: 8px;
+    margin-top: 200px;
+    margin-left: 600px;
+    padding: 5px;
+    text-align: center;
+}
+.heading{
+    margin: 0;
+    padding: 10px;
+}
+#loginForm{
+    font-size: 20px;
+}
+.field{
+    border-radius: 7px;
+    width:80%;
+    border: 1px solid rgb(52,5,33);
+    font-size: 15px;
+    padding: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.button{
+    font-size: 20px;
+    font-family: "Hammersmith One", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: white;
+    border: 1px solid rgb(52,5,33);
+    border-radius: 7px;
+    padding: 4px 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+}

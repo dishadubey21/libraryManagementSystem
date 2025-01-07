@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Hammersmith One", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(52, 5, 33) ;
+    color: white;
+    position: sticky; /* Makes the navbar sticky */
+    top: 0; /* Sticks the navbar to the top */
+    z-index: 1000;
+    font-size: 25px;
+}
+
+
+.logo img {
+    height: 50px; 
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color:pink;
+    border-radius: 5px;
+}
+
+.header{
+    background-color:beige;
+    padding:15px;
+    text-align: center;
+
+}
+.form{
+    text-align: center;
+    font-family: "Hammersmith One", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 15px;
+    
+}
+#addBookForm{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.field{
+    padding: 10px;
+    width:35%;
+    border:1px solid black;
+    border-radius: 7px;
+
+}
+#bookGenre{
+    
+}
