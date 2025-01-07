@@ -27,8 +27,8 @@ function displayBooks() {
             <p><strong>Genre:</strong> ${book.genre}</p>
             <p><strong>Price:</strong> ${book.price}</p>
             <img src="${book.imgurl}" alt="${book.title}" style="width: 100px; height: auto;">
-            <button onclick="editBook('${book.title}')">Edit</button>
-            <button onclick="deleteBook('${book.title}')">Delete</button>
+            <button onclick="editBook('${book.title}')" class="button">Edit</button>
+            <button onclick="deleteBook('${book.title}')" class="button">Delete</button>
         `;
         booksContainer.appendChild(bookCard);
     });
@@ -57,10 +57,11 @@ document.getElementById("addBookForm").addEventListener("submit", function(event
     saveBooksToLocalStorage(updatedBooks);
     displayBooks(); 
     document.getElementById("bookTitle").value="";
-            document.getElementById("bookAuthor").value="";
-            document.getElementById("bookGenre").value="";
-            document.getElementById("bookPrice").value="";
-            document.getElementById("bookImage").value="";
+    document.getElementById("bookAuthor").value="";
+    document.getElementById("bookGenre").value="";
+    document.getElementById("bookPrice").value="";
+    document.getElementById("bookImage").value="";
+    alert("Your book has been added. Please check in the Book-list.")
 });
 
 function editBook(bookTitle) {
