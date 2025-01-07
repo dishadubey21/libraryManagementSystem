@@ -56,10 +56,16 @@ document.getElementById("addBookForm").addEventListener("submit", function(event
     const updatedBooks = [...books, newBook];
     saveBooksToLocalStorage(updatedBooks);
     displayBooks(); 
+    document.getElementById("bookTitle").value="";
+            document.getElementById("bookAuthor").value="";
+            document.getElementById("bookGenre").value="";
+            document.getElementById("bookPrice").value="";
+            document.getElementById("bookImage").value="";
 });
 
 function editBook(bookTitle) {
-    document.getElementById("addBookForm").innerHTML="";
+    document.getElementById("addBookForm").style.display="none";
+    document.getElementById("heading3").innerText="Edit the Details";
     const books = loadBooksFromLocalStorage();
     const bookToEdit = books.find(book => book.title === bookTitle);
 
@@ -81,8 +87,15 @@ function editBook(bookTitle) {
             bookToEdit.imgurl = document.getElementById("editbookImage").value;
 
             saveBooksToLocalStorage(books);
-            displayBooks(); 
+            document.getElementById("addBookForm").style.display="block";
             document.getElementById("editBookForm").style.display = "none";
+            document.getElementById("heading3").innerText="Add New Book";
+            document.getElementById("bookTitle").value="";
+            document.getElementById("bookAuthor").value="";
+            document.getElementById("bookGenre").value="";
+            document.getElementById("bookPrice").value="";
+            document.getElementById("bookImage").value="";
+            displayBooks();
         };
     }
 }
