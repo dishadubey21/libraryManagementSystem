@@ -52,25 +52,27 @@
             </select><br>
 
             <label for="bookPrice">Price:</label><br>
-            <input type="number" id="bookPrice" name="bookPrice" required><br>
+            <input type="number" id="bookPrice" name="bookPrice" class="field" required><br>
 
             <label for="bookImage">Book Image URL:</label><br>
-            <input type="text" id="bookImage" name="bookImage" required><br>
+            <input type="text" id="bookImage" name="bookImage" class="field" required><br>
 
-            <button type="submit">Add Book</button>
+            <button type="submit" id="button">Add Book</button>
         </form>
-        </div>
-        <hr style="width: 100%;  color : #000;">
+        
+       </div>
+       <hr style="width: 100%;  color : #000;">
+    
 
         <form id="editBookForm" style="display: none;">
             <label for="editbookTitle">Book Title:</label><br>
-            <input type="text" id="editbookTitle" name="bookTitle" required><br>
+            <input type="text" id="editbookTitle" name="bookTitle" class="field" required><br>
 
             <label for="editbookAuthor">Author:</label><br>
-            <input type="text" id="editbookAuthor" name="bookAuthor" required><br>
+            <input type="text" id="editbookAuthor" name="bookAuthor" class="field" required><br>
 
             <label for="editbookGenre">Genre:</label><br>
-            <select id="editbookGenre" name="bookGenre" required>
+            <select id="editbookGenre" name="bookGenre"  required>
                 <option value="">Select Genre</option>
                 <option value="Fiction">Fiction</option>
                 <option value="Non-Fiction">Non-Fiction</option>
@@ -85,16 +87,17 @@
             </select><br>
 
             <label for="editbookPrice">Price:</label><br>
-            <input type="number" id="editbookPrice" name="bookPrice" required><br>
+            <input type="number" id="editbookPrice" name="bookPrice" class="field" required><br>
 
             <label for="editbookImage">Book Image URL:</label><br>
-            <input type="text" id="editbookImage" name="bookImage" required><br>
+            <input type="text" id="editbookImage" name="bookImage" class="field" required><br>
 
-            <button type="submit">Edit Book</button>
+            <button type="submit" id="button">Edit Book</button>
             
         </form>
+        <hr style="width: 100%;  color : #000;">
         
-        <h3>Available Books</h3>
+        <header class="heading">Available Books</header>
         <div id="booksContainer"></div>
     </section>
 
