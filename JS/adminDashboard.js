@@ -1,4 +1,3 @@
-
 function loadBooksFromLocalStorage() {
     const storedBooks = localStorage.getItem("books");
     return storedBooks ? JSON.parse(storedBooks) : [];
