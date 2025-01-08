@@ -122,7 +122,7 @@ function displayBooks(filteredBooks) {
     booksContainer.innerHTML = ""; 
 
     if (filteredBooks.length === 0) {
-        booksContainer.innerHTML = "<p>No books available for this genre.</p>";
+        booksContainer.innerHTML = "<pre>Oops!!! No books available for this genre.</pre>";
         return;
     }
 
