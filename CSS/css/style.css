@@ -2,17 +2,8 @@ body, html {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-<<<<<<< HEAD
-=======
-        font-family: "Hammersmith One", serif;
-        font-weight: 400;
-        font-style: normal;
-    
-        
->>>>>>> aa20343099ea6647668abd3fc7098967b47cfad8
     }
-    
-    
+  
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -29,8 +20,7 @@ body, html {
     .logo img {
         height: 50px; 
     }
-    
-    
+     
     .nav-links {
         list-style: none;
         display: flex;
