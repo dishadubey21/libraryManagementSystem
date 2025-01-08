@@ -1,0 +1,13 @@
+.thankyou{
+    background-color: rgb(52,5,33);
+    color: white;
+    font-family: "Hammersmith One", serif;
+    font-weight: 400;
+    font-style: normal;
+    width:30%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 280px;
+    margin-left: 500px;
+}

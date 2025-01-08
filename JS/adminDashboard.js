@@ -26,9 +26,10 @@ function displayBooks() {
             <p><strong>Author:</strong> ${book.author}</p>
             <p><strong>Genre:</strong> ${book.genre}</p>
             <p><strong>Price:</strong> ${book.price}</p>
-            <img src="${book.imgurl}" alt="${book.title}" style="width: 100px; height: auto;">
-            <button onclick="editBook('${book.title}')" class="button">Edit</button>
-            <button onclick="deleteBook('${book.title}')" class="button">Delete</button>
+            <img src="${book.imgurl}" alt="${book.title}" style="width: 100px; height: auto;"><br>
+            <button onclick="editBook('${book.title}')" class="button2">Edit</button>
+            <button onclick="deleteBook('${book.title}')" class="button2">Delete</button>
+            <hr style="width: 100%;  color : #000;">
         `;
         booksContainer.appendChild(bookCard);
     });
