@@ -112,6 +112,7 @@ function displayGenres() {
     genres.forEach(genre => {
         const li = document.createElement("li");
         li.textContent = genre;
+        li.className="genre-elements";
         li.addEventListener("click", () => filterBooksByGenre(genre));
         genreList.appendChild(li);
     });
@@ -135,7 +136,7 @@ function displayBooks(filteredBooks) {
             <p><strong>Author:</strong> ${book.author}</p>
             <p><strong>Genre:</strong> ${book.genre}</p>
             <p><strong>Price:</strong> ${book.price}</p>
-            <button onclick="borrowBook(${book.id})">Borrow</button>
+            <button onclick="borrowBook(${book.id})"class="borrowBtn">Borrow</button>
         `;
 
         booksContainer.appendChild(bookCard);

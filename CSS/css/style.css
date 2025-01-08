@@ -2,6 +2,10 @@ body, html {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: "Hammersmith One", serif;
+        font-weight: 400;
+        font-style: normal;
+    
         
     }
     
@@ -58,84 +62,134 @@ body, html {
         z-index: 1000;
     }
     #main-content {
-        display: flex;
-        padding: 10px;
-        background-color: #f9f9f9; 
-        border: 1px solid #ddd;
-        width: 100%;
-        margin: 0 auto; 
-        width: 100%; 
-        position: relative;
-        top: 0; 
-        margin: 0; 
-        box-sizing: border-box; 
-
-      }
+      display: flex;
+      width: 100%;
+      height:100%;
       
+  }
+  
+  #genre-sidebar{
+      width: 15%; 
+      background-color: rgb(84, 5, 52);
+      padding: 10px;
+      box-sizing: border-box; 
+      color: white;
+  }
+  
+  #book-list{
+      width: 70%; 
+      background-color: white;
+      padding: 10px;
+      box-sizing: border-box; 
+  }
+  .head2{
+     font-size: 30px;
+     text-align: center;
+  }
+  #genre-list{
+    list-style-type:none;
     
-      #genre-sidebar{
-        background-color: rgb(52, 5, 33);
-        color: white;
-        margin: 0;
-        padding-left: 10px;
-        width:15%;
-    }
-      .head2{
-        font-family: "Hammersmith One", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      .head3{
-        font-family: "Hammersmith One", serif;
-        font-weight: 400;
-        font-style: normal;
-        background-color: rgb(184, 131, 163);
-        padding: 0;
-        margin: 0;
-        color: #ddd;
-        font-size: 20px;
-        padding-left: 10px;
-        width: 100%;
-      
-      }
-      /*.book-card{
-        border: 0.5px solid #eee;
-        border-radius: 0.5rem;
-        box-shadow: 3px 3px 3px #eee;
-        text-align: center;
-        width: min-content;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 0.2rem;
-      }*/
-      
-      .book-card {
-        width: 300px; /* Fixed width */
-        height: 400px; /* Fixed height */
-        background-color: #fff;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        display: flex;
-        flex-direction: column; /* Stack content vertically */
-        justify-content: space-between;
-        align-items: center;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      
-      /* Card Hover Effect */
-      .book-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-      }
-      
-      /* Book Image */
-      .book-card img {
-        width: 100%;
-        height: 65%; /* Occupies 65% of the card height */
-        object-fit: cover; /* Ensures image fills the space proportionally */
-        border-bottom: 1px solid #ddd;
-      }
-      
+  }
+  .genre-elements{
+    padding: 15px;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  #genre-list li{
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    color: white;
+  }
+  #genre-list li:hover {
+    background-color:pink;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  .head3{
+     font-size: 30px;
+     text-align: center;
+  }
+  #books-container {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.book-card {
+    background-color: beige; 
+    padding: 20px; 
+    border-radius: 8px;
+    text-align: center; 
+    box-shadow: 0 4px 8px rgb(52, 5, 33);
+}
+.book-card img{
+  height: 200px;
+  width: 150px;
+}
+footer{
+  background-color: rgb(52,5,33);
+  color: white;
+  font-size: 20px;
+  padding: 3px;
+  text-align: center;
+}
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.4); 
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#ok-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#ok-button:hover {
+  background-color: #45a049;
+}
+.borrowBtn{
+  padding: 10px;
+  font-size: 15px;
+  border-radius:8px ;
+  border:1px solid black;
+  background-color: rgb(52,5,33);
+  color: white;
+  margin-left: 30px;
+}
+

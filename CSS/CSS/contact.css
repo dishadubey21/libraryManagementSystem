@@ -44,6 +44,7 @@ header{
 }
 #contact-form{
     padding: 20px;
+    text-align: center;
 }
 .form{
     padding: 5px;
@@ -81,7 +82,7 @@ header{
     border:1px solid black;
     background-color: rgb(52,5,33);
     color: white;
-    margin-left: 200px;
+    margin-left: 30px;
 }
 #library-location{
     margin-top: 10px;
@@ -89,6 +90,7 @@ header{
     color:rgb(44, 42, 42);
     margin-bottom: 5px;
     padding: 20px;
+    text-align: center;
 }
 #working-hours{
     margin-top: 10px;
