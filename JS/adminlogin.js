@@ -8,7 +8,8 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     const password = document.getElementById("password").value;
 
     if (username === correctUsername && password === correctPassword) {
-        window.location.href = "http://127.0.0.1:5500/libraryManagementSystem/adminDashboard.html";
+        window.location.href = "adminDashboard.html";
+        //http://127.0.0.1:5500/adminDashboard.html
     } 
     else {
         document.getElementById("error-message").style.display = "block";
